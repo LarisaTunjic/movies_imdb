@@ -17,7 +17,7 @@ class CreateMoviesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->text('title');
-            $table->text('imdbID')->nullable();
+            $table->text('imdbID');
             $table->string('type')->nullable();
             $table->date('published_at')->nullable()->index();
             $table->text('poster')->nullable();
@@ -30,10 +30,6 @@ class CreateMoviesTable extends Migration
             $table->text('language')->nullable();
             $table->text('country')->nullable();
             $table->text('awards')->nullable();
-            $table->date('dvd')->nullable();
-            $table->text('boxOffice')->nullable();
-            $table->text('production')->nullable();
-            $table->text('webSite')->nullable();
         });
     }
 

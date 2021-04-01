@@ -39,10 +39,6 @@ class Movies extends Model
         'language',
         'country',
         'awards',
-        'dvd',
-        'boxOffice',
-        'production',
-        'webSite',
     ];
 
 }

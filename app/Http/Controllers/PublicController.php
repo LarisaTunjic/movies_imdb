@@ -41,9 +41,9 @@ class PublicController extends Controller
                   
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
-                            'title' => $arrayResponseB['Title']
-                        ], [
+                            'title' => $arrayResponseB['Title'],
                             'imdbID'=> $arrayResponseB['imdbID'],
+                        ], [
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
@@ -93,9 +93,9 @@ class PublicController extends Controller
                   
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
-                            'title' => $arrayResponseB['Title']
-                        ], [
+                            'title' => $arrayResponseB['Title'],
                             'imdbID'=> $arrayResponseB['imdbID'],
+                        ], [
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
@@ -107,7 +107,7 @@ class PublicController extends Controller
                             'plot'=> $arrayResponseB['Plot'],
                             'language'=> $arrayResponseB['Language'],
                             'country'=> $arrayResponseB['Country'],
-                            'awards'=> $arrayResponseB['Awards'],
+                            'awards'=> $arrayResponseB['Awards'],                            
                         ]);
 
                         $insertMovie->save();
@@ -146,9 +146,9 @@ class PublicController extends Controller
                   
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
-                            'title' => $arrayResponseB['Title']
-                        ], [
+                            'title' => $arrayResponseB['Title'],
                             'imdbID'=> $arrayResponseB['imdbID'],
+                        ], [
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
@@ -160,7 +160,7 @@ class PublicController extends Controller
                             'plot'=> $arrayResponseB['Plot'],
                             'language'=> $arrayResponseB['Language'],
                             'country'=> $arrayResponseB['Country'],
-                            'awards'=> $arrayResponseB['Awards'],
+                            'awards'=> $arrayResponseB['Awards'],                            
                         ]);
 
                         $insertMovie->save();
