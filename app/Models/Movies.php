@@ -26,10 +26,23 @@ class Movies extends Model
      */
     protected $fillable = [
         'title',
+        'imdbID',
         'type',
         'published_at',
-        'content',
-        
+        'poster',
+        'rating',
+        'genre',
+        'director',
+        'writer',
+        'actor',
+        'plot',
+        'language',
+        'country',
+        'awards',
+        'dvd',
+        'boxOffice',
+        'production',
+        'webSite',
     ];
 
 }

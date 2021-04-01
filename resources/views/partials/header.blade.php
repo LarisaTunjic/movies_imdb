@@ -11,8 +11,7 @@
 <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="{{route('home')}}">Movies</a>
-                <a class="navbar-brand" href="{{route('home')}}">TV shows</a>
+                <a class="navbar-brand" href="{{route('home')}}">Home</a>
             </div>
         </div>
     </nav>
