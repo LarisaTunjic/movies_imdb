@@ -42,8 +42,8 @@ class PublicController extends Controller
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
                             'title' => $arrayResponseB['Title'],
-                            'imdbID'=> $arrayResponseB['imdbID'],
                         ], [
+                            'imdbID'=> $arrayResponseB['imdbID'],
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
@@ -94,8 +94,8 @@ class PublicController extends Controller
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
                             'title' => $arrayResponseB['Title'],
-                            'imdbID'=> $arrayResponseB['imdbID'],
                         ], [
+                            'imdbID'=> $arrayResponseB['imdbID'],
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
@@ -147,8 +147,8 @@ class PublicController extends Controller
                     if ( !empty( $arrayResponseB)  ) {
                         $insertMovie = Movies::firstOrCreate([
                             'title' => $arrayResponseB['Title'],
-                            'imdbID'=> $arrayResponseB['imdbID'],
                         ], [
+                            'imdbID'=> $arrayResponseB['imdbID'],
                             'type'=> $arrayResponseB['Type'],
                             'poster'=> $arrayResponseB['Poster'],
                             'published_at'=> $arrayResponseB['Released'],
