@@ -14,7 +14,7 @@ class PublicController extends Controller
     public function home()
     {
 
-        $latestMovies = Movies::orderBy('updated_at', 'desc')-> get();
+        $latestMovies = Movies::orderBy('updated_at', 'desc')->take(12)->get();
         return view('welcome', compact('latestMovies'));
     }
 
