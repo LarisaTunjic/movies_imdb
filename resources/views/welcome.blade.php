@@ -4,9 +4,8 @@
     @include('partials.search')
     <div class="container">
             <div id="movies" class="row">
-         <h2>Last searched</h2>
-            @for ($i = 0; $i < 10; $i++)
-                @foreach($latestMovies as $movieLat)
+         <h2>Last searched</h2> 
+            @foreach($latestMovies as $movieLat)
                     <div class="col-md-3">
                         <div class="well text-center">
                         <img src="{{$movieLat->poster}}">
@@ -15,8 +14,7 @@
                             <a class="btn btn-primary" href="{{route('movie', $movieLat->id)}}">Details</a>
                         </div>
                     </div>
-                @endforeach
-            @endfor
+            @endforeach
         </div>
     </div>
 </body>
