@@ -7,5 +7,6 @@
     }
     #movies .col-md-3 img{
         height: 220px;
+        width: 180px;
     }
 }
