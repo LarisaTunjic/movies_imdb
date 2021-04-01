@@ -9,7 +9,7 @@
             <h2> {{$movie->title}}</h2>
             <ul class="list-group">
                 <li class="list-group-item">Genre(s): {{$movie->genre}}</li>
-                <li class="list-group-item">Released: {{$movie->published_at}}</li>
+                <li class="list-group-item">Released: {{$movie->published_at->format('M d, Y')}}</li>
                 <li class="list-group-item">Rated: {{$movie->rating}}</li>
                 <li class="list-group-item">Director(s): {{$movie->director}}</li>
                 <li class="list-group-item">Writer(s): {{$movie->writer}}</li>
@@ -25,7 +25,7 @@
             <h3>Plot</h3>
             {{$movie->plot}}
             <hr>
-            <a href="http://imdb.com/title/imdbID" target="_blank" class="btn btn-primary">View IMDB</a>
+            <a href="http://imdb.com/title/{{$movie->imdbID}}" target="_blank" class="btn btn-primary">View IMDB</a>
             <a href="{{route('home')}}" class="btn btn-default">Back to search</a>
         </div>
     </div>
